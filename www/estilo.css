@@ -1,0 +1,112 @@
+html{
+	height: 100%;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	font-size:14px;
+	font-family: Arial;
+	background:#e9e9e9;
+}
+.clear{
+	clear:both;
+}
+h1{
+	font-size:18px;
+	color:#444444;
+}
+#main{
+	padding:20px;
+	color:#666;
+}
+
+.pie{
+	display:table;
+	margin:auto;
+}
+.piechart canvas{
+	margin:auto;
+	display:block;
+	width:200px;
+	height:200px;
+}
+.legend{
+	margin-top:20px;
+}
+
+.pie-legend {
+  list-style: none;
+
+
+}
+.doughnut-legend{
+	margin:0px;
+	padding:0px;
+}
+.doughnut-legend li {
+  display: block;
+  padding-left: 0px;
+  position: relative;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  padding: 2px 8px 2px 28px;
+  font-size: 14px;
+  cursor: default;
+  -webkit-transition: background-color 200ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+.doughnut-legend li:hover {
+  background-color: #fafafa;
+}
+.doughnut-legend li span {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.barchart canvas{
+	width:300px;
+	height::;00px;
+}
+.linechart canvas{
+	width:300px;
+	height:300px;
+}
+
+.line-legend{
+	margin:0px;
+	padding:0px;
+}
+.line-legend li {
+  display: block;
+  padding-left: 0px;
+  position: relative;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  padding: 2px 8px 2px 28px;
+  font-size: 14px;
+  cursor: default;
+  -webkit-transition: background-color 200ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+.line-legend li:hover {
+  background-color: #fafafa;
+}
+.line-legend li span {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  border-radius: 5px;
+}
