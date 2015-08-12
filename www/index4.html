@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Datum</title>
+	<script src="./js/jquery.min.js"></script>
+    <!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+    <script src="./js/highstock.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/exporting.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+	#grafico1{
+		width: 100%;
+	}
+	</style>
+	
+	<script>
+		$(document).ready(function() { 
+			
+$('#grafico1 .area').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'EVALUACIÓN DE LA LABOR DEL GOBIERNO DURANTE EL AÑO 2014'
+        },
+        subtitle: {
+            text: 'Hechos positivos del gobierno'
+        },
+        xAxis: {
+            categories: ['Pensión 65', 'Beca 18', 'Qali Warma', 'Programa Juntos', 'Programas sociales','Zonas pobres','Inclusión social','Crecimiento económico','Aumento de inversiones','Obras de infraestructura','No ha hecho nada','Ns/nc']
+        },
+        yAxis: {
+            min: 0,
+            showEmpty:false,
+            title: {
+                text: null
+            }
+        },
+        tooltip: {
+            enabled:false,
+            animated: false
+        },
+        legend: {
+            reversed: false,
+            enabled: false
+        },
+        plotOptions: {
+            //series: {
+                //stacking: 'normal'
+            //},
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        series: [{
+            name: 'John',
+            data: [52, 46, 24, 14, 13, 13, 13, 9, 5, 4, 19, 7]
+        }],
+        credits:{
+                enabled:false
+            },
+            exporting:{
+                enabled:false
+            }
+    });
+				
+				
+			
+				
+		
+
+		    
+		});
+	</script>
+</head>
+<body>
+    <div class="navigation">
+        <a href="./index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
+    </div>
+	<div id="grafico1">
+		
+		<div class="area" style="height:400px"></div>
+	</div>
+</body>
+</html>

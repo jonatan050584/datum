@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Datum</title>
+	<script src="./js/jquery.min.js"></script>
+    <!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+    <script src="./js/highstock.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/exporting.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+	.grafico{
+		width: 150%;
+	}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		$(document).ready(function() { 
+			
+$('#grafico1 .area').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Calificación de actividades de gobierno'
+        },
+        subtitle: {
+            text: 'Si pudiera ponerle una nota de 0 a 20, tipo colegio … que ha hecho el gobierno durante el año 2014, ¿qué nota le pondría?'
+        },
+        xAxis: {
+            type: 'category',
+            title:{
+                text:""
+            }
+        },
+        yAxis: {
+        	min: 0,
+        	max: 20.0,
+            title: {
+                text: ''
+            }
+
+        },
+        legend: {
+            enabled: true
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}%',
+                    rotation: 0,
+                    defer: false
+                }
+            }
+        },
+
+        tooltip: {
+            enabled:false,
+            animated: false
+        },
+
+        series: [{
+          
+            name: "… al manejo de los programas sociales",
+            data: [{
+                y: 11.0
+            }]
+        },
+        {
+         
+            name: "… al manejo económico del país",
+            data: [{
+                y: 10.9
+            }]
+        },{
+           
+            name: "… al manejo de los programas sociales",
+            data: [{
+                y: 9.1
+            }]
+        },{
+           
+            name: "… a las acciones de seguridad y luch",
+            data: [{
+                y: 8.9
+            }]
+        },
+        {
+           
+            name: "… a la lucha contra la corrupción",
+            data: [{
+                y: 8.2
+            }]
+        }
+        ],
+        credits:{
+	        	enabled:false
+	        },
+	        exporting:{
+	        	enabled:false
+	        }
+    });
+				
+				
+			
+				
+		
+
+		    
+		});
+	</script>
+</head>
+<body>
+    <div class="navigation">
+        <a href="./index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
+    </div>
+	<div id="grafico1">
+		
+		<div class="area" style="height:400px"></div>
+	</div>
+</body>
+</html>
