@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Datum</title>
+	<script src="./../../js/jquery.min.js"></script>
+	<!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+	<script src="./../../js/highstock.js"></script>
+	<script src="./../../js/data.js"></script>
+	<script src="./../../js/exporting.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../../css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<style>
+	.grafico{
+		width: 100%;
+		overflow-x:hidden;
+	}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		$(document).ready(function() { 
+			
+$('#grafico1 .area').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Conocimiento del mensaje presidencial'
+        },
+        subtitle: {
+            text: 'Dígame, ¿vio, escuchó, leyó o se enteró acerca del mensaje presidencial que dio el Presidente Ollanta
+Humala, el 28 de julio?'
+        },
+        xAxis: {
+            categories: [
+                'Agosto<br>2012',
+                'Agosto<br>2013',
+                'Agosto<br>2014',
+                'Agosto<br>2015'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Rainfall (mm)'
+            }
+        },
+        tooltip: {
+            enabled:false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 1,
+                pointWidth: 30,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}%',
+                    rotation: 0,
+                    defer: false,
+                    style: {
+                        fontWeight: 'bold',
+                        fontSize: '10px'
+                    }
+                }
+            }
+        },
+        series: [{
+            color:"#00B0F0",
+            name: 'Si está enterado',
+            data: [50,79,44,48]
+
+        }, {
+            color:"#0070C0",
+            name: 'No está enterado',
+            data: [50,21,56,52]
+
+        }],
+        credits:{
+	        	enabled:false
+	        },
+	        exporting:{
+	        	enabled:false
+	        }
+    });
+				
+				
+			
+				
+		
+
+		    
+		});
+	</script>
+</head>
+<body>
+    <div class="navigation">
+        <a href="./../../index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
+    </div>
+	<div id="grafico1">
+		
+		<div class="area" style="height:400px"></div>
+	</div>
+</body>
+</html>

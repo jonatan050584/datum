@@ -1,18 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Datum</title>
-	<script src="./js/jquery.min.js"></script>
-    <!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
-    <script src="./js/highstock.js"></script>
-    <script src="./js/data.js"></script>
-    <script src="./js/exporting.js"></script>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="./../../js/jquery.min.js"></script>
+	<!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+	<script src="./../../js/highstock.js"></script>
+	<script src="./../../js/data.js"></script>
+	<script src="./../../js/exporting.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../../css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<style>
 	.grafico{
-		width: 150%;
+		width: 100%;
+		overflow-x:hidden;
 	}
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,10 +26,10 @@ $('#grafico1 .area').highcharts({
             type: 'column'
         },
         title: {
-            text: 'Calificación de actividades de gobierno'
+            text: '¿Aprueba o desaprueba la labor pública que viene desarrollando …?'
         },
         subtitle: {
-            text: 'Si pudiera ponerle una nota de 0 a 20, tipo colegio … que ha hecho el gobierno durante el año 2014, ¿qué nota le pondría?'
+            text: '<strong>Luis Iberico</strong><br>Presidente del Congreso de la República'
         },
         xAxis: {
             type: 'category',
@@ -47,13 +49,21 @@ $('#grafico1 .area').highcharts({
             enabled: true
         },
         plotOptions: {
+            column:{
+                groupPadding:1
+            },
             series: {
-                borderWidth: 0,
+                borderWidth: 1,
+                pointWidth: 30,
                 dataLabels: {
                     enabled: true,
                     format: '{point.y:.1f}%',
                     rotation: 0,
-                    defer: false
+                    defer: false,
+                    style: {
+                        fontWeight: 'bold',
+                        fontSize: '10px'
+                    }
                 }
             }
         },
@@ -64,36 +74,23 @@ $('#grafico1 .area').highcharts({
         },
 
         series: [{
-          
-            name: "… al manejo de los programas sociales",
+            color:"#0070C0",
+            name: "Aprueba",
             data: [{
                 y: 11.0
             }]
         },
         {
-         
-            name: "… al manejo económico del país",
+            color:"#FF0000",
+            name: "Desaprueba",
             data: [{
                 y: 10.9
             }]
         },{
-           
-            name: "… al manejo de los programas sociales",
+            color:"#BFBFBF",
+            name: "NS/NC",
             data: [{
                 y: 9.1
-            }]
-        },{
-           
-            name: "… a las acciones de seguridad y luch",
-            data: [{
-                y: 8.9
-            }]
-        },
-        {
-           
-            name: "… a la lucha contra la corrupción",
-            data: [{
-                y: 8.2
             }]
         }
         ],
@@ -116,7 +113,7 @@ $('#grafico1 .area').highcharts({
 </head>
 <body>
     <div class="navigation">
-        <a href="./index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
+        <a href="./../../index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
     </div>
 	<div id="grafico1">
 		

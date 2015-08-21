@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Datum</title>
+	<script src="./../../js/jquery.min.js"></script>
+	<!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+	<script src="./../../js/highstock.js"></script>
+	<script src="./../../js/data.js"></script>
+	<script src="./../../js/exporting.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../../css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+	.grafico{
+		width: 100%;
+		overflow-x:hidden;
+	}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		$(document).ready(function() { 
+			
+$('#grafico1 .area').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Si pudiera ponerle una nota de 0 a 20, tipo colegio a la labor que viene realizando la(el) …, ¿qué nota le pondría?'
+        },
+        xAxis: {
+            categories: [
+                'Iglesia<br>Católica',
+                'RENIEC',
+                'ONPE',
+                'Defensoria<br>del Pueblo',
+                'JNE',
+                'INDECOPI',
+                'CONFIEP',
+                'CGTP',
+                'ESSALUD',
+                'Fiscalía de<br>la Nación',
+                'Gobierno',
+                'Congreso de<br>la República',
+                'Poder<br>Judicial'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Rainfall (mm)'
+            }
+        },
+        tooltip: {
+            enabled:false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 1,
+                pointWidth: 30,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}',
+                    rotation: 0,
+                    defer: false,
+                    style: {
+                        fontWeight: 'bold',
+                        fontSize: '10px'
+                    }
+                }
+            }
+        },
+    legend:{
+        enabled:false
+    },
+        series: [{
+            color:"#0070C0",
+            name: 'Data',
+            data: [13.2,12.5,11.7,11,10.9,10.7,10.6,10.4,10,9.6,9.2,8.4,8.4]
+
+        }],
+        credits:{
+	        	enabled:false
+	        },
+	        exporting:{
+	        	enabled:false
+	        }
+    });
+				
+				
+			
+				
+		
+
+		    
+		});
+	</script>
+</head>
+<body>
+    <div class="navigation">
+        <a href="./../../index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
+    </div>
+	<div id="grafico1">
+		
+		<div class="area" style="height:400px"></div>
+	</div>
+</body>
+</html>

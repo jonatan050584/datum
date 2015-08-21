@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Datum</title>
+	<script src="./../../js/jquery.min.js"></script>
+	<!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+	<script src="./../../js/highstock.js"></script>
+	<script src="./../../js/data.js"></script>
+	<script src="./../../js/exporting.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../../css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+	.grafico{
+		width: 100%;
+		overflow-x:hidden;
+	}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script>
+		$(document).ready(function() { 
+			
+$('#grafico1 .area').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Institución que tiene más poder en el Perú'
+        },
+        subtitle: {
+            text: 'Actualmente, ¿cuál es la institución o colectivo que tiene más poder en el Perú?'
+        },
+        xAxis: {
+            categories: ['Falta de seguridad ciudadana','Manejo adecuado de la economía','Luchar contra la corrupción','Mayor inclusión social','Hacer reformas del Estado','Manejo de los conflictossociales','Institucionalidad del país','Ns/nc']
+        },
+        yAxis: {
+            min: 0,
+            showEmpty:false,
+            title: {
+                text: null
+            }
+        },
+        tooltip: {
+            enabled:false,
+            animated: false
+        },
+        legend: {
+            reversed: false,
+            enabled: false
+        },
+        plotOptions: {
+            //series: {
+                //stacking: 'normal'
+            //},
+            series: {
+                dataLabels: {
+                    enabled: true,
+                    pointPadding: 0.5,
+                    groupPadding: 0.5,
+                    style: {
+                        fontWeight: 'bold',
+                        fontSize: '10px'
+                    }
+                }
+            },
+            bar: {
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:f}%'
+                }
+            }
+        },
+    legend:{
+        enabled:true
+    },
+        series: [{
+            color:"#C00000",
+            name: 'Agosto 2015',
+            data: [52,19,15,4,3,3,1,3]
+        },{
+            color:"#FF2D2D",
+            name: 'Setiembre 2014',
+            data: [46,20,19,3,5,4,1,2]
+        },{
+            color:"#FF9393",
+            name: 'Setiembre 2013',
+            data: [46,20,19,3,5,4,1,2]
+        }],
+        credits:{
+                enabled:false
+            },
+            exporting:{
+                enabled:false
+            }
+    });
+				
+				
+			
+				
+		
+
+		    
+		});
+	</script>
+</head>
+<body>
+    <div class="navigation">
+        <a href="./../../index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
+    </div>
+	<div id="grafico1">
+		
+		<div class="area" style="height:650px"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Datum</title>
+	<script src="./../../js/jquery.min.js"></script>
+	<!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+	<script src="./../../js/highstock.js"></script>
+	<script src="./../../js/data.js"></script>
+	<script src="./../../js/exporting.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../../css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+	.grafico{
+		width: 100%;
+		overflow-x:hidden;
+	}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		$(document).ready(function() { 
+			
+
+        // Build the chart
+        $('#grafico1 .area').highcharts({
+            chart: {
+                plotBackgroundColor: 0,
+                plotBorderWidth: 0,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Relación: Congreso - Gobierno'
+            },
+            subtitle: {
+			            text: 'Con Luis Ibérico como nuevo Presidente del Congreso, ¿cree Ud. que la relación entre el Congreso y el gobierno será de colaboración o de enfrentamiento?'
+			        },
+            tooltip: {
+                animation: false,
+                enabled: false
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+	                    distance: -30,
+	                    format: '{point.percentage:.1f} %',
+	                    style: {
+	                        fontWeight: 'bold',
+	                        color: 'white',
+	                        fontSize: '11px',
+	                        textShadow: '0px 1px 0px black'
+	                    }
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: "Brands",
+                colorByPoint: true,
+                data: [{
+                	name: "Enfrentamiento",
+                	y: 35,
+                    color: '#00B0F0'
+                },{
+                	name: "Ns/nc",
+                	y: 34,
+                    color:"#BFBFBF",
+                },{
+                	name: "Colaboración",
+                    color:"#0070C0",
+                	y: 31
+                }]
+            }],
+            credits:{
+	        	enabled:false
+	        },
+	        exporting:{
+	        	enabled:false
+	        }
+        });
+    });
+	</script>
+</head>
+<body>
+    <div class="navigation">
+        <a href="./../../index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
+    </div>
+	<div id="grafico1">
+		
+		<div class="area" style="height:400px"></div>
+	</div>
+</body>
+</html>

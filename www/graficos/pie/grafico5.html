@@ -3,16 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Datum</title>
-	<script src="./js/jquery.min.js"></script>
-    <!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
-    <script src="./js/highstock.js"></script>
-    <script src="./js/data.js"></script>
-    <script src="./js/exporting.js"></script>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="./../../js/jquery.min.js"></script>
+	<!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+	<script src="./../../js/highstock.js"></script>
+	<script src="./../../js/data.js"></script>
+	<script src="./../../js/exporting.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../../css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<style>
-	#grafico1{
+	.grafico{
 		width: 100%;
+		overflow-x:hidden;
 	}
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,10 +30,10 @@
                 type: 'pie'
             },
             title: {
-                text: 'Impacto en la economía del país'
+                text: 'Conocimiento del patrimonio'
             },
             subtitle: {
-			            text: 'En su opinión, ¿cree Ud. que con estas medidas tomadas por el gobierno la economía del país mejorará, seguirá igual o empeorará?'
+			            text: 'En su opinión, ¿todos los candidatos a la presidencia de la república y sus respectivos cónyuges deberían o no deberían hacer de conocimiento público su patrimonio e ingresos?'
 			        },
             tooltip: {
                 animation: false,
@@ -60,19 +61,17 @@
                 name: "Brands",
                 colorByPoint: true,
                 data: [{
-                	name: "Seguirá Igual",
-                	y: 49,
-                	sliced: true,
-                    selected: true
+                	name: "No deberían",
+                	y: 7,
+                    color: '#00B0F0'
                 },{
-                	name: "Empeorará",
-                	y: 14
+                	name: "Ns/nc",
+                	y: 3,
+                    color:"#BFBFBF",
                 },{
-                	name: "Ns/Nc",
-                	y: 11
-                },{
-                	name: "Mejorará",
-                	y: 26
+                	name: "Si deberían",
+                    color:"#0070C0",
+                	y: 90
                 }]
             }],
             credits:{
@@ -87,7 +86,7 @@
 </head>
 <body>
     <div class="navigation">
-        <a href="./index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
+        <a href="./../../index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
     </div>
 	<div id="grafico1">
 		

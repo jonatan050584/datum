@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Datum</title>
+	<script src="./../../js/jquery.min.js"></script>
+	<!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+	<script src="./../../js/highstock.js"></script>
+	<script src="./../../js/data.js"></script>
+	<script src="./../../js/exporting.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../../css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+	.grafico{
+		width: 100%;
+		overflow-x:hidden;
+	}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		$(document).ready(function() { 
+			
+			$.ajax({
+				url:"data/grafico1.csv"
+				
+			}).done(function(res){
+				$('#grafico1 .area').highcharts('StockChart',{
+					rangeSelector: {
+               		selected: 2
+        		},
+					chart: {
+			            type: 'spline'
+			        },
+					title: {
+			            text: '¿Aprueba o desaprueba la labor que viene desarrollando Ollanta Humala como Presidente de la República?'
+			        },
+					data: {
+		                csv: res,
+		               
+		                
+		            },
+		            rangeSelector:{
+		            	buttonTheme: {
+		            		width: 80,
+		            	},
+		            	buttons: [{
+						
+							type: 'month',
+							count: 6,
+							text: '6 meses'
+						}, {
+							type: 'year',
+							count: 1,
+							text: '1 año'
+						}, {
+							type: 'all',
+							text: 'Todo'
+						}],
+						inputEnabled: false
+
+		            },
+                    legend:{
+                        enabled:true
+                    },
+		          
+		            
+		            plotOptions: {
+			            series: {
+			                borderWidth: 0,
+			                pointWidth: 50,
+			                dataLabels: {
+			                    enabled: true,
+			                    format: '{point.y:.f}%'
+			                },
+			                enableMouseTracking: false
+			            }
+			        },
+			        credits:{
+			        	enabled:false
+			        },
+			        exporting:{
+			        	enabled:false
+			        },
+			        navigator:{
+
+			        	enabled:false
+
+			        },
+			      	scrollbar: {
+			      		enabled:false,
+		                barBackgroundColor: '#ff0000',
+		                barBorderRadius: 1,
+		                barBorderWidth: 0,
+		                buttonBackgroundColor: 'gray',
+		                buttonBorderWidth: 0,
+		                buttonBorderRadius: 7,
+		                trackBackgroundColor: 'none',
+		                trackBorderWidth: 1,
+		                trackBorderRadius: 8,
+		                trackBorderColor: '#CCC'
+		            },
+			        
+			        
+			    });
+			})
+
+		    
+		});
+	</script>
+</head>
+<body>
+
+	<div class="navigation">
+        <a href="./../../index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
+    </div>
+
+	<div id="grafico1">
+		
+		<div class="area" style="height:550px; width:100%"></div>
+	</div>
+
+
+	<!--<div id="container" style="width:100%; height:400px;"></div>-->
+</body>
+</html>

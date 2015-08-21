@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Datum</title>
+	<script src="./../../js/jquery.min.js"></script>
+	<!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+	<script src="./../../js/highstock.js"></script>
+	<script src="./../../js/data.js"></script>
+	<script src="./../../js/exporting.js"></script>
+	<link rel="stylesheet" type="text/css" href="./../../css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+	.grafico{
+		width: 100%;
+		overflow-x:hidden;
+	}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script>
+		$(document).ready(function() { 
+			
+$('#grafico1 .area').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Candidato más transparente<br>- listado sugerido de personas -'
+        },
+        subtitle: {
+            text: 'En su opinión, ¿cuál de los siguientes posibles candidatos será más transparente en la presentación de sus propiedades e ingresos?'
+        },
+        xAxis: {
+            categories: ['Keiko Fujimori', 'Pedro P. Kuczynski', 'Alan Garcia', 'César Acuña', 'Daniel Urresti','Humberto Lay Sun','Alejandro Toledo','Yehude Simon','Antero Flores Aráoz','Otros Candidatos','Ninguno','Ns/nc']
+        },
+        yAxis: {
+            min: 0,
+            showEmpty:false,
+            title: {
+                text: null
+            }
+        },
+        tooltip: {
+            enabled:false,
+            animated: false
+        },
+        legend: {
+            reversed: false,
+            enabled: false
+        },
+        plotOptions: {
+            //series: {
+                //stacking: 'normal'
+            //},
+            series: {
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        fontWeight: 'bold',
+                        fontSize: '10px'
+                    }
+                }
+            },
+            bar: {
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:f}%'
+                }
+            }
+        },
+        series: [{
+            color:"#0070C0",
+            name: 'John',
+            data: [19, 14, 5, 4, 4, 3, 2, 1, 1, 2, 34, 11]
+        }],
+        credits:{
+                enabled:false
+            },
+            exporting:{
+                enabled:false
+            }
+    });
+				
+				
+			
+				
+		
+
+		    
+		});
+	</script>
+</head>
+<body>
+    <div class="navigation">
+        <a href="./../../index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
+    </div>
+	<div id="grafico1">
+		
+		<div class="area" style="height:550px"></div>
+	</div>
+</body>
+</html>

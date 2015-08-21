@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.container{
+	width: 100%;
+	display: table;
+	text-align: center;
+}
+.logo{
+	width: 100%;
+	padding: 1em 0;
+	border-bottom: .1em solid #eee;
+    background-color: #b9057c;
+}
+.menu{
+	width: 100%;
+	padding: 1em 0;
+}
+.menu .navbar {
+	width: 100%;
+	display: table;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu .navbar  li{
+	width: 48%;
+	margin: 1%;
+	float: left;
+	display: inline;
+    text-align: center;
+}
+.menu .navbar  li a{
+	width: 100%;
+	overflow: hidden;
+	padding: 2.5em 0;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+}
+.boton_desplegable{
+    background-color: #b9057c;
+}
+.navigation{
+	width: 100%;
+	display: table;
+	background-color: #b9057c;
+	margin-bottom: 1em;
+}
+.navigation a{
+	padding: 1em;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (max-width: 420px) {
+    .menu{
+		width: 100%;
+		padding: 1em 0;
+	}
+	.menu .navbar {
+		width: 100%;
+		display: table;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+        
+	}
+	.menu .navbar li{
+		width: 96%;
+		margin: 2%;
+        background: #d36cb0;
+	}
+	.menu .navbar li a{
+		width: 90%;
+		padding: 1.5em 1em;
+		display: block;
+		text-decoration: none;
+		color: #fff;
+		font-size: .9em;
+        text-align: center;
+	}
+    .submenu{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: none;        
+    }
+    .submenu li{
+        width: 96%;
+        margin: 2%;
+        text-align: center;
+        border-bottom: 1px solid #b9057c;
+    }
+    .submenu li:last-child{
+        border-bottom: none;
+    }
+    .submenu li a{
+    }
+        
+}
