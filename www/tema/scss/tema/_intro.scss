@@ -1,0 +1,49 @@
+.intro{
+	width: 100%;
+	display: table;
+}
+.topbar{
+	width: 100%;
+	background-color: #9e027e;
+	position: fixed;
+	z-index: 100;
+	top:0;
+	& .title{
+		text-align: center;
+		color: #fff;
+		padding: .8em 0;
+		font-family: 'HelveticaNeueBold';
+		font-size: 1.2em;
+	}
+}
+.logo2{
+	width: 100%;
+	text-align: center;
+	margin-top:2em;
+	margin-bottom: 1em;
+	& img{
+		width: 80%;
+	}
+}
+.description{
+	font-size: .8em;
+	text-align: center;
+	display: table;
+	width: 100%;
+	margin-bottom: 2em;
+	font-family: 'Helvetica Neue LT Std 45 Light';
+}
+.boton{
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-bottom: 1em;
+	&__intro{
+		border: 1px solid #9e027e;
+		text-decoration: none;
+		padding:.5em 1em;
+		color: #9e027e;
+		font-family: 'Helvetica Neue LT Std 45 Light';
+		font-size: 1.2em;
+	}
+}

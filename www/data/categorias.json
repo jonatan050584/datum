@@ -1,0 +1,248 @@
+{
+	"categorias":[{
+			"id": 1,
+			"nombre":"POPULARIDAD",
+			"data":[{
+					"orden":1,
+					"nombre":"EVOLUCIÓN DE LA POPULARIDAD DEL PRESIDENTE DE LA REPÚBLICA",
+					"file": "graficos/lineal/grafico1.html"
+				},
+				{
+					"orden":2,
+					"nombre":"EVOLUCIÓN DE LA APROBACIÓN DE LA LABOR DEL PRESIDENTE DE LA REPÚBLICA",
+					"file": "graficos/lineal/grafico2.html"
+				},
+				{
+					"orden":3,
+					"nombre":"EVOLUCIÓN DE LA POPULARIDAD DE NADINE HEREDIA",
+					"file": "graficos/lineal/grafico4.html"
+				},
+				{
+					"orden":4,
+					"nombre":"POPULARIDAD DE PRINCIPALES AUTORIDADES",
+					"file": "graficos/columna/grafico1.html"
+				},
+				{
+					"orden":5,
+					"nombre":"POPULARIDAD COMPARATIVA DE LOS PRESIDENTES DEL CONGRESO",
+					"file": "graficos/columna/grafico2.html"
+				},
+				{
+					"orden":6,
+					"nombre":"POPULARIDAD DE PRINCIPALES AUTORIDADES",
+					"file": "graficos/lineal/grafico5.html"
+				},
+				{
+					"orden":7,
+					"nombre":"POPULARIDAD DEL ALCALDE DE LIMA",
+					"file": "graficos/lineal/grafico6.html"
+				}]
+		
+		},
+		{
+			"id":2,
+			"nombre":"Coyuntura",
+			"data":[{
+					"orden":1,
+					"nombre":"NOTA ATRIBUIDA A INSTITUCIONES",
+					"file": "graficos/columna/grafico3.html"
+				},
+				{
+					"orden":2,
+					"nombre":"EVOLUCIÓN DE LAS NOTAS ATRIBUIDAS A INSTITUCIONES",
+					"file": "graficos/columna/grafico4.html"
+				},
+				{
+					"orden":3,
+					"nombre":"Sistema leasing y alquiler venta",
+					"file": "graficos/pie/grafico1.html"
+				},
+				{
+					"orden":4,
+					"nombre":"Necesidad de la geolocalización",
+					"file": "graficos/pie/grafico2.html"
+				},
+				{
+					"orden":5,
+					"nombre":"Rumor sobre Nadine Heredia",
+					"file": "graficos/pie/grafico3.html"
+				},
+				{
+					"orden":6,
+					"nombre":"Maltrato a Nadine Heredia",
+					"file": "graficos/pie/grafico4.html"
+				},
+				{
+					"orden":7,
+					"nombre":"Evolución de la intención de voto presidencial para el 2016",
+					"file": "graficos/lineal/grafico7.html"
+				},
+				{
+					"orden":8,
+					"nombre":"Conocimiento del patrimonio",
+					"file": "graficos/pie/grafico5.html"
+				},
+				{
+					"orden":9,
+					"nombre":"Candidato más transparente",
+					"file": "graficos/barra/grafico1.html"
+				},
+				{
+					"orden":10,
+					"nombre":"Candidato preferido para el Nacionalismo",
+					"file": "graficos/pie/grafico6.html"
+				},
+				{
+					"orden":11,
+					"nombre":"Personajes involucrados en el caso de la carretera Interoceánica Sur",
+					"file": "graficos/barra/grafico2.html"
+				},
+				{
+					"orden":12,
+					"nombre":"Toledo y el lavado de dinero ",
+					"file": "graficos/pie/grafico7.html"
+				},
+				{
+					"orden":13,
+					"nombre":"Intención de la denuncia",
+					"file": "graficos/pie/grafico8.html"
+				},
+				{
+					"orden":14,
+					"nombre":"García y el caso de los narcoindultos",
+					"file": "graficos/pie/grafico9.html"
+				},
+				{
+					"orden":15,
+					"nombre":"PPK y su nacionalidad",
+					"file": "graficos/pie/grafico10.html"
+				},
+				{
+					"orden":16,
+					"nombre":"Keiko y su patrimonio",
+					"file": "graficos/pie/grafico11.html"
+				},
+				{
+					"orden":17,
+					"nombre":"Urresti y el caso Bustíos",
+					"file": "graficos/pie/grafico12.html"
+				},
+				{
+					"orden":18,
+					"nombre":"Principal preocupación del Presidente Ollanta Humala",
+					"file": "graficos/barra/grafico3.html"
+				},
+				{
+					"orden":19,
+					"nombre":"Evaluación del gobierno",
+					"file": "graficos/columna/grafico5.html"
+				},
+				{
+					"orden":20,
+					"nombre":"Expectativas con el gobierno",
+					"file": "graficos/columna/grafico6.html"
+				},
+				{
+					"orden":21,
+					"nombre":"Respeto al Presidente",
+					"file": "graficos/pie/grafico13.html"
+				},
+				{
+					"orden":22,
+					"nombre":"Persona a quién debe escuchar",
+					"file": "graficos/barra/grafico4.html"
+				},
+				{
+					"orden":23,
+					"nombre":"Elección de Luis Iberico",
+					"file": "graficos/pie/grafico14.html"
+				},
+				{
+					"orden":24,
+					"nombre":"Labor de Luis Iberico",
+					"file": "graficos/pie/grafico15.html"
+				},
+				{
+					"orden":25,
+					"nombre":"Labor de los presidentes del Congreso frente a sus antecesores",
+					"file": "graficos/columna/grafico7.html"
+				},
+				{
+					"orden":26,
+					"nombre":"Labor del Congreso con Luis Iberico",
+					"file": "graficos/pie/grafico16.html"
+				},
+				{
+					"orden":27,
+					"nombre":"Relación: Congreso - Gobierno",
+					"file": "graficos/pie/grafico17.html"
+				},
+				{
+					"orden":28,
+					"nombre":"Conocimiento del mensaje presidencial",
+					"file": "graficos/columna/grafico8.html"
+				},
+				{
+					"orden":29,
+					"nombre":"Percepción del mensaje presidencial ",
+					"file": "graficos/pie/grafico18.html"
+				},
+				{
+					"orden":30,
+					"nombre":"Cumplimiento de lo ofrecido",
+					"file": "graficos/pie/grafico19.html"
+				}]
+			},
+		{
+			"id":3,
+			"nombre":"Tema de Fondo",
+			"data":[{
+					"orden":1,
+					"nombre":"NOTA ATRIBUIDA A INSTITUCIONES",
+					"file": "graficos/columna/grafico9.html"
+				},
+				{
+					"orden":2,
+					"nombre":"EVOLUCIÓN DE LAS NOTAS ATRIBUIDAS A INSTITUCIONES",
+					"file": "graficos/barra/grafico5.html"
+				}]
+			},
+		{
+			"id":4,
+			"nombre":"Electoral",
+			"data":[{
+					"orden":1,
+					"nombre":"Evolución de la intención de voto presidencial para el 2016",
+					"file": "graficos/lineal/grafico7.html"
+				}]
+			},
+		{
+			"id":5,
+			"nombre":"Economía",
+			"data":[{
+					"orden":26,
+					"nombre":"Labor del Congreso con Luis Iberico",
+					"file": "graficos/pie/grafico16.html"
+				},
+				{
+					"orden":27,
+					"nombre":"Relación: Congreso - Gobierno",
+					"file": "graficos/pie/grafico17.html"
+				},
+				{
+					"orden":28,
+					"nombre":"Conocimiento del mensaje presidencial",
+					"file": "graficos/columna/grafico8.html"
+				},
+				{
+					"orden":29,
+					"nombre":"Percepción del mensaje presidencial ",
+					"file": "graficos/pie/grafico18.html"
+				},
+				{
+					"orden":30,
+					"nombre":"Cumplimiento de lo ofrecido",
+					"file": "graficos/pie/grafico19.html"
+				}]
+			}]
+}

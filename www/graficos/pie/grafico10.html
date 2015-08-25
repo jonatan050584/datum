@@ -3,20 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Datum</title>
-	<script src="./../../js/jquery.min.js"></script>
-	<!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
-	<script src="./../../js/highstock.js"></script>
-	<script src="./../../js/data.js"></script>
-	<script src="./../../js/exporting.js"></script>
-	<link rel="stylesheet" type="text/css" href="./../../css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<style>
-	.grafico{
-		width: 100%;
-		overflow-x:hidden;
-	}
-	</style>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./../../tema/css/estilos.css">
+    <link rel="stylesheet" href="./../../icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../../fonts/style.css">
+    <script src="./../../js/jquery.min.js"></script>
+    <!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+    <script src="./../../js/highstock.js"></script>
+    <script src="./../../js/data.js"></script>
+    <script src="./../../js/exporting.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>
 		$(document).ready(function() { 
 			
@@ -85,12 +80,20 @@
 	</script>
 </head>
 <body>
-    <div class="navigation">
-        <a href="./../../index.html"><i class="fa fa-arrow-left"></i> Regresar</a>
+    <div class="intro">
+      <div class="topbar">
+        <div class="icon__pantalla"><a href="./../../coyuntura.html"><i class="fa fa-arrow-left"></i></a></div>
+        <div class="title"> <strong>COYUNTURA</strong></div>
+      </div>
+      <div class="grupo">
+        <div class="caja total">
+          <div class="description">
+            <div id="grafico1">     
+                <div class="area" style="height:550px; width:100%"></div>
+            </div>
+        </div>
+      </div>
     </div>
-	<div id="grafico1">
-		
-		<div class="area" style="height:400px"></div>
-	</div>
+    <div class="footer"><img src="./../../img/bar-footer.png"></div>
 </body>
 </html>
